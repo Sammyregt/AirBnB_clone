@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ Module of Unittests """
 import unittest
+import sys
+sys.path.append('../../')
 from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 from models import storage

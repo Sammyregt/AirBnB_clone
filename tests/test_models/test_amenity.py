@@ -2,6 +2,8 @@
 """
 Unittest for amenity.py
 """
+import sys
+sys.path.append('../../')
 import unittest
 from models.amenity import Amenity
 import datetime

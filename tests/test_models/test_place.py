@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
-Unittest for amenity.py
+    Unittest for place.py
 """
+import sys
+sys.path.append('../..')
 import unittest
 from models.place import Place
 import datetime

@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """ Module of Unittests """
 import unittest
-from models.base_model import BaseModel
 import os
+import sys
+sys.path.append('../../')
+from models.base_model import BaseModel
 from models import storage
 from models.engine.file_storage import FileStorage
 import datetime

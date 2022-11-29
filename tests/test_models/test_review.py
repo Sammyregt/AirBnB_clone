@@ -3,6 +3,8 @@
 Unittest for review.py
 """
 import unittest
+import sys
+sys.path.append('../../')
 from models.review import Review
 import datetime
 
