@@ -24,14 +24,14 @@ class BaseModel:
         else:
             f = "%Y-%m-%dT%H:%M:%S.%f"
             for keys, value in kwargs.items():
-                if key =='created_at' or key == 'updated_at':
+                if (key == 'created_at') or (key == 'updated_at'):
                     value = datetime.strptime(kwargs[key], f)
                     if key != '__class__':
                         setattr(self, key, value)
 
     def __str__(self):
         """
-        returns class name, id and attribute dictionary
+            returns class name, id and attribute dictionary
         """
         class_name = "[" + self.__class__.__name__ + "]"
         dct = {x: y for (x, y) in self.__dict__.items() if (not y) is False}
@@ -46,9 +46,10 @@ class BaseModel:
 
     def to_dict(self):
         """
-            Creates new dictionary, add a key and returning datetime converted to strings
+            Creates new dictionary,add a key and
+            returning datetime converted to strings
         """
-        new dict = {}
+        new_dict = {}
 
         for key, vlaues in self.__.dict__.items():
             if key == 'created_at' or key == 'updated_at':

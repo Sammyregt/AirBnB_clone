@@ -7,7 +7,6 @@ import json
 import os
 
 
-
 class FileStorage:
     """
         Class that serializes and deserializes JSON objects
@@ -48,15 +47,14 @@ class FileStorage:
         from models.place import Place
         from models.city import City
         from models.amenity import Amenity
-        from models.state import Sate
+        from models.state import State
         from models.review import Review
 
         dct = {'BaseModel': BaseModel, 'User': User, 'Place': Place,
-                'city': City, 'Amenity': Amenity, 'State': State,
-                'Review': Review}
+               'city': City, 'Amenity': Amenity, 'State': State,
+               'Review': Review}
 
         if os.path.exists(FileStorage.__file_path) is True:
             with open(FileStorage.file_path, 'r') as f:
                 for key, value in json.load(f).items():
                     self.new(dct[value['__class__']](**value))
-
