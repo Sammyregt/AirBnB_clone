@@ -3,6 +3,8 @@
 """
 import os
 import unittest
+import sys
+sys.path.append('../../')
 from models.engine.file_storage import FileStorage
 from models import storage
 from models.city import City

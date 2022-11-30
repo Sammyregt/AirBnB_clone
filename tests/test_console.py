@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Defines unittests for console.py.
 """
+import sys
+sys.path.append('../')
 from io import StringIO
 import os
 import unittest

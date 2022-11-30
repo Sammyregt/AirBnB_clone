@@ -3,6 +3,8 @@
 """
 import os
 import unittest
+import sys
+sys.path.append('../../')
 from models import storage
 from datetime import datetime
 from models.amenity import Amenity
