@@ -1,0 +1,9 @@
+footer {
+    position: fixed;
+	display: grid;
+	place-content: center;
+	background-color: green;
+	height: 60px;
+	inset: 0px;
+	top: unset;
+}
